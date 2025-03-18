@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Главная{% endblock %}
+
+{% block content %}
+<div class="container text-center">
+
+    <h1 class="display-5 custom-title">Добро пожаловать!</h1>
+    <p class="lead text-muted">Ваш путь к здоровью, силе и гармонии начинается здесь!</p>
+
+     <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+        <div class="col">
+            <a href="{{ url_for('stretching') }}" class="text-decoration-none">
+                <div class="card h-100 shadow border-0 bg-light">
+                    <div class="card-body">
+                        <h4 class="card-title">Растяжка</h4>
+                        <p class="card-text text-muted">Развивайте гибкость и улучшайте осанку.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="{{ url_for('strength') }}" class="text-decoration-none">
+                <div class="card h-100 shadow border-0 bg-light">
+                    <div class="card-body">
+                        <h4 class="card-title">Силовые тренировки</h4>
+                        <p class="card-text text-muted">Укрепите мышцы и повысьте выносливость.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="{{ url_for('mfr') }}" class="text-decoration-none">
+                <div class="card h-100 shadow border-0 bg-light">
+                    <div class="card-body">
+                        <h4 class="card-title">МФР</h4>
+                        <p class="card-text text-muted">Снимите напряжение и улучшите восстановление.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="{{ url_for('meditation') }}" class="text-decoration-none">
+                <div class="card h-100 shadow border-0 bg-light">
+                    <div class="card-body">
+                        <h4 class="card-title">Медитации</h4>
+                        <p class="card-text text-muted">Найдите гармонию и расслабьтесь.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <p class="lead text-muted custom-text fw-bold">Начни прямо сейчас, и результат не заставит себя ждать!</p>
+
+
+</div>
+{% endblock %}
